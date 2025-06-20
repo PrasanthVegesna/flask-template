@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 
 # MongoDB Atlas connection (replace <username>, <password>, and <cluster-url>)
-client = MongoClient("mongodb+srv://vprasanthvarma:jZ0k29sQamMUlNsE@cluster0.8uzrsxu.mongodb.net/test?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://<username>:<password>@<cluster-url>/test?retryWrites=true&w=majority")
 db = client["mydatabase"]
 collection = db["mycollection"]
 
